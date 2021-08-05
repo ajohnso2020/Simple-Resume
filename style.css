@@ -3,6 +3,27 @@
 }
 body {
     background-color: pink;
+    font-family: Inter;
+}
+p {
+   font-weight: 400;
+   margin-left: 20px;
+   padding-top: 30px;
+   color: white;
+}
+h3 {
+    font-size: 18.33px;
+    color: white;
+}
+.title {
+    color: black;
+    padding: 0;
+}
+.body-text a {
+    color: white;
+}
+.body-text p {
+    line-height: 1.5em;
 }
 ul {
     padding-left: 10px;
@@ -11,15 +32,17 @@ ul > li {
    list-style-type: none;
    padding: 5px 0;
    color: white;
+   padding-top: 20px;
+   font-size: 14.66px;
+   margin-left: 10px;
 }
 ul > li::before {
     content: '✔';
     color: white;
     border: 1px solid white;
     text-align: center;
-    padding: 2px;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 ul a {
     color: white;
@@ -27,20 +50,30 @@ ul a {
 .card-container {
     width: 85%;
     background-color: cornflowerblue;
-    height: 100vh;
+    height: 1070px;
     margin: 40px auto;
     border-radius: 4px;
 }
 .hero-image {
     height: 170px;
-    background-color: blue;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    position: relative;
+    background-color: white;
+}
+.hero-image img {
+    border-radius: 50%;
+    width: 123px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    transform: translateX(-50%);
 }
 .name-title {
     text-align: center;
-    background-color: wheat;
-    height: 150px;
+    background-color: white;
+    height: 145px;
 }
 .name {
     font-size: 33px;
@@ -59,14 +92,22 @@ ul a {
     border-bottom: 1px solid lightgray;
 }
 .section-title {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgba(255,255,255,0.26);
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    margin-left: 20px;
 }
 .button {
-    border: 1px solid white;
+    border: .1px solid rgba(255,255,255,0.26);
     display: inline-block;
-    padding: 10px;
-    margin: 10px;
     border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+    padding: 10px 16px;
+
 }
 .button i {
     color: white;
@@ -75,7 +116,21 @@ ul a {
 .button a {
     color: white;
     text-decoration: none;
+    font-size: 14.66px;
+    font-weight: 300;
 }
-.section:last-of-type {
-    border-bottom: none;
+.section-1{
+  background-color: #4299FF;
+  height: 215px;  
 }
+.section-2{
+    background-color: #3288ED;
+    height: 270px;
+}
+.section-3{
+    background-color: #277DE3;
+    height: 280px;
+}
+@media only screen and (min-width: 736px) {  
+
+    }
