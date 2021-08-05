@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: pink;
+}
+ul {
+    padding-left: 10px;
+}
+ul > li {
+   list-style-type: none;
+   padding: 5px 0;
+   color: white;
+}
+ul > li::before {
+    content: '✔';
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+ul a {
+    color: white;
+}
+.card-container {
+    width: 85%;
+    background-color: cornflowerblue;
+    height: 100vh;
+    margin: 40px auto;
+    border-radius: 4px;
+}
+.hero-image {
+    height: 170px;
+    background-color: blue;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.name-title {
+    text-align: center;
+    background-color: wheat;
+    height: 150px;
+}
+.name {
+    font-size: 33px;
+    font-family: Inter;
+    font-weight: 400;
+    padding: 16px 0;
+}
+.hero-title {
+    text-align: center;
+}
+.title {
+    font-size: 18.33px;
+    font-weight: 400;
+}
+.section {
+    border-bottom: 1px solid lightgray;
+}
+.section-title {
+    border-bottom: 1px solid lightgray;
+}
+.button {
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.button i {
+    color: white;
+    margin-right: 5px;
+}
+.button a {
+    color: white;
+    text-decoration: none;
+}
+.section:last-of-type {
+    border-bottom: none;
+}
