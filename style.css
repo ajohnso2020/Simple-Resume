@@ -2,7 +2,7 @@
     margin: 0;
 }
 body {
-    background-color: pink;
+    background-color: mediumseagreen;
     font-family: Inter;
 }
 p {
@@ -48,7 +48,7 @@ ul a {
     color: white;
 }
 .card-container {
-    width: 85%;
+    width: 375px;
     background-color: cornflowerblue;
     height: 1070px;
     margin: 40px auto;
@@ -89,14 +89,13 @@ ul a {
     font-weight: 400;
 }
 .section {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgba(255,255,255,0.26);
 }
 .section-title {
     border-bottom: 1px solid rgba(255,255,255,0.26);
-    width: 90%;
-    margin: auto;
-    padding: 30px 0;
+    padding: 20px 0;
     margin-left: 20px;
+    width: 90%;
 }
 .button {
     border: .1px solid rgba(255,255,255,0.26);
@@ -105,7 +104,7 @@ ul a {
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: -10px;
-    margin-right: -10px;
+    margin-right: -15px;
     padding: 10px 16px;
 
 }
@@ -130,7 +129,30 @@ ul a {
 .section-3{
     background-color: #277DE3;
     height: 280px;
+} 
+hr {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
 }
-@media only screen and (min-width: 736px) {  
-
+@media only screen and (min-width: 600px) {  
+    .card-container {
+        width: 550px;
+    }
+    .section-1, .section-2, .section-3 {
+      display: flex;
+        
+   }
+   .section-title{
+       border-right: 1px solid rgba(255,255,255,0.26);
+       width: 30%;
+       border-bottom: none;
+       height: 50%;
+       margin-left: 20px;
+       margin-top: 20px;
+       text-align: center;
+   }
+   .body-text {
+       width: 70%;
+   }
     }
